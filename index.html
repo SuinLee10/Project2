@@ -6,7 +6,27 @@
     <title>Document</title>
 </head>
 <body>
-    Hello World!!!
+    Hello World!!!<br>
+    <div id = "middle">
+        <div id = "menubar">
+        <ul id = "menulist">
+        <li class = "menuitem" onclick = "redirectToPage('style1.html')" >Stylesheet 1</li>
+        <li class = "menuitem" onclick ="redirectToPage('style2.html')" >Stylesheet 2</li>
+        <li class = "menuitem" onclick = "redirectToPage('style3.html')">Stylesheet 3</li>
+        <li class = "menuitem" onclick = "redirectToPage('style4.html')" >Stylesheet 4</li>
+        <li class = "menuitem" onclick = "redirectToPage('nostyle.html')" >No Stylesheet</li>
+        <li class = "menuitem" onclick = "redirectToPage('form.html')" >Form</li>
+        <li class = "menuitem" onclick = "redirectToPage('example.html')" >Bootstrap Example</li>
+        </ul>
+    </div>
+
+    <script>
+        function redirectToPage(pageURL){
+            location.href = pageURL;
+        }
+    </script>
+
+            
     
 </body>
 </html>

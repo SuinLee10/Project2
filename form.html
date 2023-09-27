@@ -1,0 +1,100 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <h1></h1>
+        <fieldset style ='width:500px; margin:5px; border-color:salmon'>
+        <legend style = 'text-align:center'><p>사용자 정보 입력</p></legend>
+        <form action = "form_ok.php" method="post">
+        
+            <fieldset style='width:45-px;margin:5px;border-color:aqua;text-align:center'>
+                <legend>개인 정보 입력</legend>
+                <label for = "uname"><span style ="color:red;">* </span>이름:</label>
+                <input type = "text" id="uname" name = "uname" placeholder='이름을 입력' required><br>
+                <label for = "pwd"><span style ="color:red;">* </span>비밀번호:</label>
+                <input type = "password" id= "pwd" name="pwd" placeholder='4자 이상 입력' required><br>
+                <label for = "mobile">핸드폰번호:</label>
+                <input type = "text" id ="mobile" name="mobile" placeholder="01012341234" maxlength="13"><br>
+                <label for = "email">이메일:</label>
+                <input type = "text" id = "email" name="email"><br>
+            <label for = "gender1">성별:</label>
+            <input type = "radio" id = "gender1" name ="gender" value = "M" checked>남 <input type="radio" id="radio"
+ name="gender" value ="W">여 <br>
+            <label for ="date"> 생년월일 선택 
+            <input type = "date" id = "date" max = "2023-9-27" min = "1990-01-01" value = "2023-09-27">
+            </label>
+            </fieldset>
+    
+            <label for ="hobby">취미:</label>
+            <input type = "checkbox" id="hobby" name = "hobby1" value = "1" checked>음악
+            <input type = "checkbox" id="hobby" name = "hobby2" value = "2" >독서
+            <input type = "checkbox" id="hobby" name = "hobby3" value = "3" >영화
+            <input type = "checkbox" id="hobby" name = "hobby4" value = "4" >운동
+            <input type = "checkbox" id="hobby" name = "hobby5" value = "5" >기타
+            <input type = "text" id = "hobby" name = "hobby5" placeholder="기타 취미 입력"><br>
+            좋아하는 음식: 
+            <input list = "food">
+            <datalist id = "food">
+                <option value = "피자" label="양식"></option>
+                <option value = "파스타" label="양식"></option>
+                <option value = "스테이크" label="양식"></option>
+                <option value = "햄버거" label="패스트푸드"></option>
+                <option value = "샐러드" label="패스트푸드"></option>
+                <option value = "치킨" label="패스트푸드"></option>
+                <option value = "불고기" label="한식"></option>
+                <option value = "비빔밥" label="한식"></option>
+                <option value = "육개장" label="한식"></option>
+                <option value = "갈비찜" label="한식"></option>
+                <option value = "짜장면" label="중식"></option>
+                <option value = "짬뽕" label="중식"></option>
+                <option value = "탕수육" label="중식"></option>
+            </datalist>
+            <br>
+            MBTI :
+            <select name="MBTI">
+                <optgroup label = "IN(내향형+직관형)">
+                    <option value="1">INFP</option>
+                    <option value="2">INFJ</option>
+                    <option value="3">INTP</option>
+                    <option value="4">INTJ</option>
+                </optgroup>
+                <optgroup label = "IS(내향형+감각형)">
+                    <option value="5">ISFP</option>
+                    <option value="6">ISFJ</option>
+                    <option value="7">ISTP</option>
+                    <option value="8">ISTJ</option>
+                </optgroup>
+                <optgroup label = "EN(외향형+직관형)">
+                    <option value="9">ENFP</option>
+                    <option value="10">ENFJ</option>
+                    <option value="11">ENTP</option>
+                    <option value="12">ENTJ</option>
+                </optgroup>
+                <optgroup label = "ES(외향형+감각형)">
+                    <option value="13">ESFP</option>
+                    <option value="14">ESFJ</option>
+                    <option value="15">ESTP</option>
+                    <option value="16">ESTJ</option>
+                </optgroup>
+            </select><br>
+            제목: <input type ='text' name = 'subject' placeholder="제목을 써주세요."><br>
+            내용: 
+            <textarea name = 'content' cols = 40 rows = 5 placeholder = "자유롭게 자신을 소개해주세요."></textarea>
+            <br>
+
+
+
+            <input type ="submit" value="Submit">
+            </fieldset>
+        </form>
+        
+        <script src="" async defer></script>
+    </body>
+</html>
